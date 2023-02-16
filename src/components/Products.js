@@ -1,9 +1,8 @@
-import { Search, NavigateBefore, NavigateNext } from "@mui/icons-material";
+import { Search} from "@mui/icons-material";
 import {
   Grid,
   InputAdornment,
   TextField,
-  Stack
 } from "@mui/material";
 import { Box } from "@mui/system";
 import axios from "axios";
@@ -13,10 +12,9 @@ import { config } from "../App";
 import Footer from "./Footer";
 import Header from "./Header";
 import "./Products.css";
-import { ProductCard, Classifiedproduct } from './ProductCard'
-import Cart from './Cart'
+import { ProductCard } from './ProductCard'
 import { generateCartItemsFrom } from './Cart'
-
+import MainSlide from './mainSlide'
 import SimpleSlider from "./slideCard"
 import Recommended from "./recomented"
 import Hotdeals from './product_files/hot_deals'
@@ -117,11 +115,8 @@ const Products = () => {
   const addToCart = async (
     token = localStorage.getItem('token'),
     product,
-    qty,
     items = cartItem,
     products = allproduct,
-    options = { preventDuplicate: false },
-    
   ) => {
     if (!token) {
       enqueueSnackbar('Login to add an item to the Cart', { variant: "warning" });
@@ -189,7 +184,7 @@ const Products = () => {
 
         {/* this is corrosal */}
         <Grid item className="carousel-grid" display='flex' justifyContent='center' alignItems='center'>
-
+          <MainSlide />
         </Grid>
 
         {/* best deals grid */}
@@ -226,13 +221,6 @@ const Products = () => {
           </Grid>
           </Grid>
 
-
-
-          {/* Flas sale */}
-        <Grid height='200px'>
-          dfgdgdfg
-
-        </Grid>
 
         {/* hot sale*/}
         <Grid container className="recommend" display='flex' >

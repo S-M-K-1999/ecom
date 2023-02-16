@@ -4,6 +4,10 @@ import "./Footer.css";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import MailIcon from '@mui/icons-material/Mail';
 import { Grid } from "@mui/material";
+import AlignVerticalCenterIcon from '@mui/icons-material/AlignVerticalCenter';
+import AppsIcon from '@mui/icons-material/Apps';
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+import { Button } from "react-bootstrap";
 const Footer = () => {
   return (
     <>
@@ -33,28 +37,63 @@ const Footer = () => {
 
       <Box className='bottom-footer '>
         <Grid className="row">
-          <Grid className="col-sm-3">
-            <Grid className="row pt-3">
-              sdfs
+          <Grid className="col-sm-2" padding='1rem'>
+            <Grid className="row pt-3" >
+              <AlignVerticalCenterIcon style={{fontSize:50}}/><span style={{fontWeight:'700',fontSize:30}}>logoipsum</span>
             </Grid>
-            <Grid className="row pt-4">
-              sdfs
+            <Grid className="row pt-4" color='#8D8D8D'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             </Grid>
-            <Grid className="row pt-4">
-              sdfs
+            <Grid className="row pt-4" width='100%' justifyContent='space-between' style={{opacity:'30%'}}>
+              <AppsIcon/>
+              <AppsIcon/>
+              <AppsIcon/>
+              <AppsIcon/>
+              <AppsIcon/>
             </Grid>
           </Grid>
-          <Grid className="col-sm-1">
-            sdfsfsdf
+          <Grid className="col-sm-2" padding='1rem' style={{display: 'flex',flexDirection:'column' ,justifyContent: 'space-around'}}>
+            <Grid class='row' /><b>QUICK LINKS</b>
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+
           </Grid>
-          <Grid className="col-sm-2">
-            sdfsfsdf
+          <Grid className="col-sm-2" padding='1rem' style={{display: 'flex',flexDirection:'column' ,justifyContent: 'space-around'}}>
+            <Grid class='row' /><b>CUSTOMER AREA</b>
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+
           </Grid>
-          <Grid className="col-sm-2">
-            sdfsfsdf
+          <Grid className="col-sm-2" padding='1rem' style={{display: 'flex',flexDirection:'column' ,justifyContent: 'space-around'}}>
+            <Grid class='row' /><b>Vendor AREA</b>
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+            <Grid class='row' />example
+
           </Grid>
-          <Grid className="col-sm-4">
-            sdfsfsdf
+          <Grid className="col-sm-4" padding='1rem' display={'flex'} direction="column" justifyContent='space-evenly'>
+            <Grid class='row' /><b>CONTACT</b>
+            <Grid class='row' py={2}/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <Grid class='row' py={2} style={{display:'flex', direction:'row', justifyContent:'space-between'}}>
+              <HeadsetMicIcon style={{fontSize:50}}/>
+              <div>
+                <span>Have any question?</span><br/>
+                <span style={{color:'blue'}}>+12 23423 343</span>
+              </div>
+              <Button style={{width:'150px',background:'white', color:'blue',}}>sdfsdf</Button>
+            </Grid>
+            <Grid display={'flex'} justifyContent='space-between' width={'100%'}>
+              <Button style={{width:'200px',height:'70px', background:'black', color:'white',border:'none'}}>Button</Button>
+              <Button style={{width:'200px',height:'70px', background:'black', color:'white',border:'none'}}>Button</Button>
+            </Grid>
           </Grid>
         </Grid>
       </Box>

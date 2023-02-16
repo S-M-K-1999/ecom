@@ -1,21 +1,15 @@
-import { AddShoppingCartOutlined } from "@mui/icons-material";
-import {useState} from 'react'
 import {
   Rating,
   Stack
 } from "@mui/material";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import React from "react";
 import "./ProductCard.css";
-import { useSnackbar } from "notistack";
-import { lightBlue } from "@mui/material/colors";
+
+const ProductCard = ({ product,index }) => {
 
 
-const ProductCard = ({ product, handleAddToCart,index }) => {
-  const {enqueueSnackbar} = useSnackbar()
-  // console.log(product.image)
   return (
           <div class='col-lg-3' key={index} >
                   <div class="card" >

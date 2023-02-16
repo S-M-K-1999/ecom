@@ -7,13 +7,12 @@ import {  Stack , TextField,InputAdornment} from "@mui/material";
 import Box from "@mui/material/Box";
 import React, { useEffect } from "react";
 import { useSnackbar } from "notistack";
-
 import "./Header.css";
 import {useHistory} from 'react-router-dom'
 import { Search,FavoriteBorder,ShoppingCart ,AccountCircle} from "@mui/icons-material";
 import {useState} from 'react'
 import axios from "axios";
-import { config, Config } from  "../App";
+import { config } from  "../App";
 import { Button } from 'react-bootstrap';
 
 
@@ -27,7 +26,7 @@ const Header = ({ cartLength}) => {
 
 
   const productsFetch = async ()=>{
-    let catSet = new Set()
+
     await axios.get(`${config.endpoint}/products`)
     .then((res)=>{
       var dataData = res.data
