@@ -133,7 +133,7 @@ const Login = () => {
       <Box className="content">
         <form onSubmit={login}>
         <Stack spacing={2} className="form">
-        <h2 className="title">Login</h2>
+        <h2 className="title" >Login</h2>
           <TextField
             id="username"
             label="username"

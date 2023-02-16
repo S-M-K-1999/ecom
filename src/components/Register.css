@@ -1,10 +1,5 @@
-/* TODO: CRIO_TASK_MODULE_REGISTER - For screens of min width 768px, display the form content to the right end of the screen */
+
 .content {
-  background-image: url("../assets/hero_image.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
@@ -20,7 +15,7 @@
 }
 
 .title {
-  color: #00a278;
+  color: #00C6D7;
 }
 
 .secondary-action {
@@ -30,27 +25,27 @@
 .link {
   font-weight: 700;
   text-decoration: none;
-  color: #45c09f;
+  color: #00C6D7;
 }
 
 .link:focus {
-  color: #00a278;
+  color: #00C6D7;
 }
 
 .link:active {
-  color: #45c09f;
+  color: #00C6D7;
 }
 
 .link:visited {
-  color: #45c09f;
+  color: #00C6D7;
 }
 
 .button {
-    background-color: #00a278 !important;
+    background-color: #00C6D7 !important;
 }
 
 .button:hover {
-    background-color: #00845c !important;
+    background-color: #ffffff !important;
 }
 
 @media screen and (min-width: 768px) {

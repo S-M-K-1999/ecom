@@ -1,9 +1,6 @@
 .content {
-    background-image: url("../assets/hero_image.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 70vh;
 }
@@ -18,7 +15,7 @@
 }
 
 .title {
-    color: #00a278;
+    color: #00C6D7;
 }
 
 .secondary-action {
@@ -31,30 +28,21 @@
 }
 
 .link:focus {
-    color: #00a278;
+    color: #00C6D7;
 }
 
 .link:active {
-    color: #45c09f;
+    color: #00C6D7;
 }
 
 .link:visited {
-    color: #45c09f;
+    color: #00C6D7;
 }
 
-/* .button {
-    background-color: #00a278 !important;
+.button {
+    background-color: #00C6D7 !important;
 }
 
 .button:hover {
-    background-color: #00845c !important;
-} */
-
-@media screen and (min-width: 768px) {
-    .content {
-        justify-content: flex-end;
-    }
-    .form {
-        min-width: 24rem;
-    }
+    background-color: #ffffff !important;
 }

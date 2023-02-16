@@ -13,3 +13,7 @@
     text-transform: none;
     font-weight: 600;
 }
+.classified-card{
+    border-radius: 30px;
+    width: 100%;
+}

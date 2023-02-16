@@ -3,17 +3,92 @@
   position: relative;
   left: 4rem;
 }
+.carousel-grid{
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 200px;
+}
 
-.hero {
-  background-image: url("../assets/hero_image.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 10rem;
+
+
+.best-deals{
+  width: 100%;
+  padding: 1rem 150px 1rem 150px;
+
+}
+.card{
+  display: flex;
+  border: none;
+  /* border: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  object-fit: fill;
+}
+.imageDiv{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.classified-grid{
+  background-color: #e6e6e6;
+  width: 100%;
+  padding: 1rem 150px 1rem 150px;
+}
+.classified-main{
+  /* background-color: transparent; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.classified-card-offer{
+  border-radius: 30px;
+  width: 200px;
+  background-color: transparent;
+}
+
+.recommend{
+  padding: 1rem 150px 1rem 150px;
+  width: 100%;
+}
+
+
+
+
+
+
+.round-btn{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
+.explore{
+  margin-top: 10px;
+  text-decoration: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    background:  #00C6D7;
+    border-radius: 12px;
+    font-weight: normal;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: all 0.2s ease-in-out;
+    width: 150px;
+}
+
+
+
+
+
+
 
 .product-grid {
   width: 100%;
